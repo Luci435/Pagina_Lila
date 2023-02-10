@@ -1,0 +1,171 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	--header: #5BC0BE;
+	--font-color: #0B132B;
+	--secondary-font: gainsboro;
+	--violet: #8A7090;
+	--gray: #3A506B;
+	font-family: 'Inter', sans-serif;
+}
+.body{
+	background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+
+}
+
+.header{
+	background-color: var(--header);
+	width: 100%;
+	height: 4rem;
+	color: var(--font);
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 0 1rem
+}
+
+.main-ctn{
+	background-color: var(--gray);
+	width: 100%;
+	color: var(--secondary-font);
+	padding: 4rem 0;
+}
+
+.main-ctn > p {
+	margin-left: 4rem;
+}
+
+.section{
+	margin: 1rem 0;
+	display: block;
+	width: 100%;
+	padding:2rem 4rem;
+
+}
+
+.section.freestyle{
+	background-color: white;
+	color: var(--font-color);
+	width: 100%;
+}
+
+.footer{
+	width: 100%;
+	height: 4rem;
+	background-color: var(--violet);
+	color: var(--secondary-font);
+	font-weight: bold;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: 0 1rem;
+}
+
+.fullCard {
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+    float: center;
+    background: linear-gradient(35deg, red, rgb(255, 0, 157));
+  }
+
+
+button {
+border-radius: 5px;
+color: rgb(0, 0, 0);
+font-weight: 600;
+background-color: #e9478a;
+padding: 5px 10px 8px 10px;
+
+}
+button:hover {
+animation-name: background-color;
+animation-duration: 500ms;
+animation-fill-mode: forwards;
+}
+@keyframes background-color {
+100% {
+    background-color: #d047b9;
+}
+}
+
+#ball {
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 70px;
+      width: 100px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  
+  div#imagen {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/vector-premium/sello-alto-secreto_25030-24458.jpg?w=2000");
+    margin: 30px auto;
+  }
+  
+  div#info {
+    position:absolute;
+    overflow:hidden;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 148, 148, 0.9);
+    opacity:0;
+    transition: opacity 0.4s;
+  }
+  
+  div#imagen:hover div#info {
+    opacity:1;
+  }
+  
+  
+  div#imagen:hover p#headline {
+    margin-left: 115px;
+  }
+  
+  p#descripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 800px;
+    transition: margin-top 0.4s;
+  }
+  
+  div#imagen:hover p#descripcion {
+    margin-top: 90px;
+  }
+  
+.alinear_boton{
+    margin-top: 30px;
+    text-align: center;
+}
